@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lab6 JSON Table</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    input, button { padding: 8px; margin: 5px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th.sortable:hover { cursor: pointer; background: #eee; }
+    th.sorted { background: #f080c0; }
+    .btn { padding: 8px 12px; margin: 5px; border: none; cursor: pointer; }
+    .green { background-color: #90ee90; }
+    .red { background-color: #f44336; color: white; }
+    .purple { background-color: #d89cde; color: white; }
+  </style>
+</head>
+<body>
+
+  <h3>СЕРВІС ДЛЯ ЗАВАНТАЖЕННЯ ДАНИХ З РЕСУРСУ {JSON} PLACEHOLDER</h3>
+  <input id="urlInput" placeholder="ENTER URL" />
+  <button class="btn green" id="loadBtn">ЗАВАНТАЖИТИ ДАНІ</button>
+  <button class="btn purple" id="clearBtn" disabled>ОЧИСТИТИ</button>
+
+  <p id="status"></p>
+
+  <div id="displayPrompt" style="display:none;">
+    <p>ВІДОБРАЗИТИ ВАШ ВАРІАНТ ТАБЛИЦІ?</p>
+    <button class="btn green" id="yesBtn">ТАК</button>
+    <button class="btn red" id="noBtn">HI</button>
+  </div>
+
+  <div id="tableContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
